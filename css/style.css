@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+.parent{
+    background-color:#fff3cd;
+}
+.container{
+    padding: 50px;
+    min-height:100vh;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    z-index: 1;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 2s;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 50%;
+}
+.line{
+    border-bottom: 2px dotted black;
+}
+.bookmark-body h2{
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(to right, #198754, #a0b43a);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+div{
+    margin: 5px;
+}
+.visit{
+    background-color: #9eb23b !important;
+    color: white !important;
+}
+.delete{
+    background-color:#eb1d36 !important;
+    color: white !important;
+}
+.add {
+    background-color: #d1512d !important;
+    color: white !important;
+    width: 150px;
+    margin: auto;
+}
+.update{
+    color: white !important;
+}
+.fa-solid{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+button{
+   cursor: pointer;
+}

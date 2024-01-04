@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/bookmark.png">
+    <title>Bookmark</title>
+</head>
+<body>
+
+    <div class="parent w-100">
+        <div class="container w-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="py-2 position-relative">Bookmarker</h1>
+            <div class="w-100 pt-4 line"></div>
+
+            <div class=" bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+
+                <h2><i class="fa-solid fa-bookmark p-2"></i>Bookmark your favourite site<i class="fa-solid fa-bookmark p-2"></i></h2>
+            
+                <div class="w-100 d-flex flex-column justify-content-center">
+                    <label for="sn" class="fw-semibold pb-2"><i class="fa-solid fa-book-bookmark p-2"></i>Site Name</label>
+                    <input id="sn" type="text" class="form-control" placeholder="Bookmark Name">
+                </div>
+
+                <div class="w-100 d-flex flex-column justify-content-center">
+                    <label for="su" class="fw-semibold pt-2 pb-2"><i class="fa-solid fa-link p-2" style="color: #000000;"></i>Site URL</label>
+                    <input id="su" type="url" class="form-control" placeholder="Website URL">
+                </div>
+
+                <button id="addBtn" class="btn add mt-3" onclick="addBookmark()">Submit</button>
+
+                <button id="updateBtn" class="btn add d-none" onclick="updateElement()">Update</button>
+
+                <input id="search" class="mt-2 form-control" type="text" placeholder="search" onkeyup="search(this.value)">
+                <div class="w-100 pt-4 line"></div>
+
+            </div>
+          
+            <table class="table text-center">
+                <thead>
+                     <tr>
+                         <th>Index</th>
+                         <th>Website name</th>
+                         <th>Visit</th>
+                         <th>Delete</th>
+                         <th>Update</th>
+                     </tr>
+                </thead>
+                <tbody id="table-data">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
